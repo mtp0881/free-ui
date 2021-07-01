@@ -1,4 +1,5 @@
 $blue-color: #42a7fe;
+$green-color: #00c899;
 
 @mixin size($width, $height: $width) {
   width: $width;
@@ -64,6 +65,7 @@ img {
     letter-spacing: 1.5px;
     font-weight: bold;
     text-align: center;
+    color: rgb(119, 119, 119);
   }
 }
 
@@ -84,6 +86,10 @@ img {
       }
     }
   }
+  & .feature1 a {
+    color: rgb(0, 195, 255);
+    font-weight: bold;
+  }
 }
 
 .flex {
@@ -95,6 +101,8 @@ img {
   &-item {
     min-width: 400px;
     height: 300px;
+    //check point
+    margin-bottom: 50px;
     box-shadow: rgb(215 215 215 / 50%) 0px 4px 16px;
     background-color: white;
     border-radius: 10px;
@@ -238,5 +246,115 @@ img {
         }
       }
     }
+  }
+}
+
+.flexbox {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: rgb(215 215 215 / 50%) 0px 4px 16px;
+  border-radius: 10px;
+  &-header {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(56, 53, 53);
+    padding: 25px;
+  }
+  &-result {
+    & .work {
+      padding: 20px;
+      &__heading {
+        color: #1a0a3b;
+        font-weight: 500;
+        font-size: 25px;
+        padding-bottom: 10px;
+        position: relative;
+        margin-bottom: 30px;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          @include size(40px, 6px);
+          border-radius: 3px;
+          background-color: $green-color;
+          margin-left: 2px;
+        }
+      }
+      &__filter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      &-tab {
+        display: flex;
+        &__item {
+          cursor: pointer;
+          padding: 10px 15px;
+          border: 1px solid $green-color;
+          border-radius: 20px 0 20px 20px;
+          &:not(:first-child) {
+            margin-left: 10px;
+          }
+          &:hover {
+            color: white;
+            background-color: $green-color;
+            transition: all 0.2s ease;
+          }
+        }
+      }
+      &__all {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 14px;
+        border-radius: 10px;
+        color: $green-color;
+        background-color: rgba($color: $green-color, $alpha: 0.25);
+      }
+      &__list {
+        display: flex;
+        margin-left: -15px;
+      }
+      &__item {
+        width: calc(25% - 15px);
+        border-radius: 6px;
+        overflow: hidden;
+        margin-left: 15px;
+      }
+      &__image {
+        @include size(100%);
+        object-fit: cover;
+        object-position: bottom;
+      }
+    }
+  }
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    &-button {
+      font-size: 14px;
+      background-color: #bbbbbbbe;
+      color: white;
+      padding: 8px;
+      border: none;
+      border-radius: 13px;
+      margin-right: 10px;
+      &:hover {
+        transition: all 0.25s linear;
+        background-color: #494949b0;
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  color: #919191;
+  & span {
+    color: rgb(255, 179, 191);
   }
 }
