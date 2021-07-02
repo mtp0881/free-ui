@@ -40,6 +40,16 @@ body {
   background-color: white;
 }
 
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -67,6 +77,11 @@ img {
     text-align: center;
     color: rgb(119, 119, 119);
   }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .filter {
@@ -356,5 +371,194 @@ img {
   color: #919191;
   & span {
     color: rgb(255, 179, 191);
+  }
+}
+
+/* Form */
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 0;
+  &-header {
+    font-size: 18px;
+    padding: 25px;
+  }
+  &-resuilt {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-footer {
+  }
+}
+
+/* Registration Form */
+
+.registration-form {
+  width: calc(30% - 25px);
+  box-shadow: rgb(215 215 215 / 50%) 0px 4px 16px;
+  border-radius: 10px;
+
+  &-header {
+    font-size: 18px;
+    font-weight: 500;
+    color: #383535;
+    padding: 25px;
+  }
+  &-resuilt {
+    border-radius: 10px;
+    padding: 25px;
+
+    &__title {
+      font-size: 15px;
+      color: rgb(94, 94, 94);
+      padding: 20px 0 5px;
+    }
+    &__input {
+      display: block;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      width: calc(100% - 30px);
+      padding: 15px;
+      border-radius: 5px;
+      transition: background-color 0.25s ease;
+      &:focus {
+        box-shadow: 0 0 0 2px rgba(255, 192, 203, 0.274);
+        background-color: white;
+        border-color: pink;
+      }
+      &::placeholder {
+        color: rgb(160, 160, 160);
+      }
+    }
+    &__button {
+      margin: 45px 0;
+      cursor: pointer;
+      border: none;
+      background-color: white;
+      padding: 10px 30px;
+      border-radius: 5px;
+      color: #f3808acb;
+      width: 38%;
+      &--color {
+        background-color: #f3808acb;
+        color: white;
+        width: calc(60%);
+      }
+    }
+    &__footer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      & .checkbox {
+      }
+      & .license {
+        margin-left: 15px;
+        color: rgb(160, 160, 160);
+        line-height: 20px;
+        & span {
+          color: #f3808acb;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    & .button {
+      font-size: 14px;
+      background-color: #bbbbbbbe;
+      color: white;
+      padding: 8px;
+      border: none;
+      border-radius: 13px;
+      margin-right: 10px;
+      &:hover {
+        transition: all 0.25s linear;
+        background-color: #494949b0;
+      }
+    }
+  }
+}
+
+/* Login Form */
+.login-form {
+  width: calc(70% - 25px);
+  box-shadow: rgb(215 215 215 / 50%) 0px 4px 16px;
+  border-radius: 10px;
+  &-header {
+    font-size: 18px;
+    font-weight: 500;
+    color: #383535;
+    padding: 25px;
+  }
+  &-resuilt {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 25px 25px 25px;
+    margin: 0 auto;
+    &__title {
+      font-size: 15px;
+      color: rgb(94, 94, 94);
+      padding: 20px 0 5px;
+    }
+    &__input {
+      display: block;
+      margin: 5px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+
+      font-size: 14px;
+      width: 100%;
+      max-width: 350px;
+      padding: 15px;
+      border-radius: 5px;
+      transition: background-color 0.25s ease;
+      &:focus {
+        box-shadow: 0 0 0 2px rgba(255, 192, 203, 0.274);
+        background-color: white;
+        border-color: pink;
+      }
+      &::placeholder {
+        color: rgb(160, 160, 160);
+      }
+    }
+    &__button {
+      margin: 45px 0;
+      cursor: pointer;
+      border: none;
+      background-color: white;
+      padding: 10px 30px;
+      border-radius: 5px;
+      color: #f3808acb;
+      &--color {
+        background-color: #f3808acb;
+        color: white;
+      }
+    }
+  }
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    & .button {
+      font-size: 14px;
+      background-color: #bbbbbbbe;
+      color: white;
+      padding: 8px;
+      border: none;
+      border-radius: 13px;
+      margin-right: 10px;
+      &:hover {
+        transition: all 0.25s linear;
+        background-color: #494949b0;
+      }
+    }
   }
 }

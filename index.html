@@ -26,135 +26,229 @@
       <h1 class="header__title">Free UI</h1>
     </header>
 
-    <ul class="filter">
-      <li class="filter-item feature1"><a href="#">All</a></li>
-      <li class="filter-item"><a href="#">Avatar</a></li>
-      <li class="filter-item"><a href="#">Gradient</a></li>
-      <li class="filter-item"><a href="#">Form</a></li>
-      <li class="filter-item"><a href="#">List</a></li>
-      <li class="filter-item"><a href="#">Card</a></li>
-      <li class="filter-item feature2"><a href="#">Center CSS</a></li>
-      <li class="filter-item"><a href="#">Progress</a></li>
-      <li class="filter-item"><a href="#">Loading</a></li>
-      <li class="filter-item"><a href="#">Dropdown</a></li>
-      <li class="filter-item"><a href="#">Menu</a></li>
-      <li class="filter-item"><a href="#">Search</a></li>
-      <li class="filter-item feature3"><a href="#">Flexbox</a></li>
-    </ul>
+    <div class="container">
+      <ul class="filter">
+        <li class="filter-item feature1"><a href="#">All</a></li>
+        <li class="filter-item"><a href="#">Avatar</a></li>
+        <li class="filter-item"><a href="#">Gradient</a></li>
+        <li class="filter-item"><a href="#">Form</a></li>
+        <li class="filter-item"><a href="#">List</a></li>
+        <li class="filter-item"><a href="#">Card</a></li>
+        <li class="filter-item feature2"><a href="#">Center CSS</a></li>
+        <li class="filter-item"><a href="#">Progress</a></li>
+        <li class="filter-item"><a href="#">Loading</a></li>
+        <li class="filter-item"><a href="#">Dropdown</a></li>
+        <li class="filter-item"><a href="#">Menu</a></li>
+        <li class="filter-item"><a href="#">Search</a></li>
+        <li class="filter-item feature3"><a href="#">Flexbox</a></li>
+      </ul>
 
-    <div class="flex">
-      <div class="flex-item flex-item--large">
-        <h2 class="flex-item__header">Menu Dropdown</h2>
-        <div class="flex-item__result">
-          <div class="dropdown">
-            <div class="dropdown__select">
-              <i class="fa fa-file dropdown__icon"></i>
-              <span class="dropdown__text">File type</span>
-              <i class="fa fa-caret-down dropdown__caret"></i>
+      <div class="flex">
+        <div class="flex-item flex-item--large">
+          <h2 class="flex-item__header">Menu Dropdown</h2>
+          <div class="flex-item__result">
+            <div class="dropdown">
+              <div class="dropdown__select">
+                <i class="fa fa-file dropdown__icon"></i>
+                <span class="dropdown__text">File type</span>
+                <i class="fa fa-caret-down dropdown__caret"></i>
+              </div>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <i class="fa fa-file dropdown__icon"></i>
+                  <span class="dropdown__text">Markup HTML</span>
+                </li>
+                <li class="dropdown__item">
+                  <i class="fa fa-file dropdown__icon"></i>
+                  <span class="dropdown__text">Photoshop PDF</span>
+                </li>
+                <li class="dropdown__item">
+                  <i class="fa fa-file dropdown__icon"></i>
+                  <span class="dropdown__text">Illustrator Al</span>
+                </li>
+                <li class="dropdown__item">
+                  <i class="fa fa-file dropdown__icon"></i>
+                  <span class="dropdown__text">Sketch .Skertch</span>
+                </li>
+              </ul>
             </div>
-            <ul class="dropdown__list">
-              <li class="dropdown__item">
-                <i class="fa fa-file dropdown__icon"></i>
-                <span class="dropdown__text">Markup HTML</span>
+          </div>
+          <div class="flex-item__footer">
+            <button class="flex-item__footer-button">Show HTML</button>
+            <button class="flex-item__footer-button">Show CSS</button>
+          </div>
+        </div>
+        <div class="flex-item">
+          <h2 class="flex-item__header">Loading Circle</h2>
+          <div class="flex-item__result">
+            <div class="circle-loading"></div>
+          </div>
+          <div class="flex-item__footer">
+            <button class="flex-item__footer-button">Show HTML</button>
+            <button class="flex-item__footer-button">Show CSS</button>
+          </div>
+        </div>
+        <div class="flex-item">
+          <h2 class="flex-item__header">Loading Circle</h2>
+          <div class="flex-item__result">
+            <div class="circles">
+              <div class="circle-item"></div>
+              <div class="circle-item"></div>
+            </div>
+          </div>
+          <div class="flex-item__footer">
+            <button class="flex-item__footer-button">Show HTML</button>
+            <button class="flex-item__footer-button">Show CSS</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flexbox">
+        <h2 class="flexbox-header">Flex Box Menu</h2>
+        <div class="flexbox-result">
+          <div class="work">
+            <h2 class="work__heading">Our Works</h2>
+            <div class="work__filter">
+              <ul class="work-tab">
+                <li class="work-tab__item">All</li>
+                <li class="work-tab__item">Illustrator</li>
+                <li class="work-tab__item">Website</li>
+                <li class="work-tab__item">UI & UX</li>
+                <li class="work-tab__item">Logo</li>
+              </ul>
+              <a href="#" class="work__all">View all</a>
+            </div>
+            <ul class="work__list">
+              <li class="work__item">
+                <img
+                  src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+                  alt=""
+                  class="work__image"
+                />
               </li>
-              <li class="dropdown__item">
-                <i class="fa fa-file dropdown__icon"></i>
-                <span class="dropdown__text">Photoshop PDF</span>
+              <li class="work__item">
+                <img
+                  src="https://images.unsplash.com/photo-1561703142-b883827407ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                  alt=""
+                  class="work__image"
+                />
               </li>
-              <li class="dropdown__item">
-                <i class="fa fa-file dropdown__icon"></i>
-                <span class="dropdown__text">Illustrator Al</span>
+              <li class="work__item">
+                <img
+                  src="https://images.unsplash.com/photo-1446071103084-c257b5f70672?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=631&q=80"
+                  alt=""
+                  class="work__image"
+                />
               </li>
-              <li class="dropdown__item">
-                <i class="fa fa-file dropdown__icon"></i>
-                <span class="dropdown__text">Sketch .Skertch</span>
+              <li class="work__item">
+                <img
+                  src="https://images.unsplash.com/photo-1500994802273-2dd2df834939?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=662&q=80"
+                  alt=""
+                  class="work__image"
+                />
               </li>
             </ul>
           </div>
         </div>
-        <div class="flex-item__footer">
-          <button class="flex-item__footer-button">Show HTML</button>
-          <button class="flex-item__footer-button">Show CSS</button>
+        <div class="flexbox-footer">
+          <button class="flexbox-footer-button">Show HTML</button>
+          <button class="flexbox-footer-button">Show CSS</button>
         </div>
       </div>
-      <div class="flex-item">
-        <h2 class="flex-item__header">Loading Circle</h2>
-        <div class="flex-item__result">
-          <div class="circle-loading"></div>
-        </div>
-        <div class="flex-item__footer">
-          <button class="flex-item__footer-button">Show HTML</button>
-          <button class="flex-item__footer-button">Show CSS</button>
-        </div>
-      </div>
-      <div class="flex-item">
-        <h2 class="flex-item__header">Loading Circle</h2>
-        <div class="flex-item__result">
-          <div class="circles">
-            <div class="circle-item"></div>
-            <div class="circle-item"></div>
+
+      <div class="form">
+        <div class="registration-form">
+          <div class="registration-form-header">
+            <h2>Registration Form</h2>
+          </div>
+          <form class="registration-form-resuilt">
+            <h3 class="registration-form-resuilt__title">First name</h3>
+            <input
+              type="text"
+              class="registration-form-resuilt__input"
+              placeholder="Name"
+            />
+            <h3 class="registration-form-resuilt__title">Email</h3>
+            <input
+              type="text"
+              class="registration-form-resuilt__input"
+              placeholder="Email"
+            />
+            <h3 class="registration-form-resuilt__title">Phone number</h3>
+            <input
+              type="text"
+              class="registration-form-resuilt__input"
+              placeholder="+7 000 000 00 00"
+            />
+            <button
+              class="
+                registration-form-resuilt__button
+                registration-form-resuilt__button--color
+              "
+            >
+              Register
+            </button>
+            <button class="registration-form-resuilt__button">Sign in</button>
+            <div class="registration-form-resuilt__footer">
+              <input type="checkbox" class="checkbox" />
+              <p class="license">
+                I agree to the terms and conditions of
+                <span>Privacy Policy</span>
+              </p>
+            </div>
+          </form>
+          <div class="registration-form-footer">
+            <button class="button">Show HTML</button>
+            <button class="button">Show CSS</button>
           </div>
         </div>
-        <div class="flex-item__footer">
-          <button class="flex-item__footer-button">Show HTML</button>
-          <button class="flex-item__footer-button">Show CSS</button>
+
+        <div class="login-form">
+          <div class="login-form-header">
+            <h2>Login Form</h2>
+          </div>
+          <form class="login-form-resuilt">
+            <h3 class="login-form-resuilt__title">First name</h3>
+            <input
+              type="text"
+              class="login-form-resuilt__input"
+              placeholder="Name"
+            />
+            <h3 class="login-form-resuilt__title">Email</h3>
+            <input
+              type="text"
+              class="login-form-resuilt__input"
+              placeholder="Email"
+            />
+            <h3 class="login-form-resuilt__title">Phone number</h3>
+            <input
+              type="text"
+              class="login-form-resuilt__input"
+              placeholder="+7 000 000 00 00"
+            />
+            <button
+              class="
+                login-form-resuilt__button login-form-resuilt__button--color
+              "
+            >
+              Register
+            </button>
+            <button class="login-form-resuilt__button">Sign in</button>
+            <div class="login-form-resuilt__footer">
+              <input type="checkbox" class="checkbox" />
+              <p class="license">
+                I agree to the terms and conditions of
+                <span>Privacy Policy</span>
+              </p>
+            </div>
+          </form>
+          <div class="login-form-footer">
+            <button class="button">Show HTML</button>
+            <button class="button">Show CSS</button>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="flexbox">
-      <h2 class="flexbox-header">Flex Box Menu</h2>
-      <div class="flexbox-result">
-        <div class="work">
-          <h2 class="work__heading">Our Works</h2>
-          <div class="work__filter">
-            <ul class="work-tab">
-              <li class="work-tab__item">All</li>
-              <li class="work-tab__item">Illustrator</li>
-              <li class="work-tab__item">Website</li>
-              <li class="work-tab__item">UI & UX</li>
-              <li class="work-tab__item">Logo</li>
-            </ul>
-            <a href="#" class="work__all">View all</a>
-          </div>
-          <ul class="work__list">
-            <li class="work__item">
-              <img
-                src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
-                alt=""
-                class="work__image"
-              />
-            </li>
-            <li class="work__item">
-              <img
-                src="https://images.unsplash.com/photo-1561703142-b883827407ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-                alt=""
-                class="work__image"
-              />
-            </li>
-            <li class="work__item">
-              <img
-                src="https://images.unsplash.com/photo-1446071103084-c257b5f70672?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=631&q=80"
-                alt=""
-                class="work__image"
-              />
-            </li>
-            <li class="work__item">
-              <img
-                src="https://images.unsplash.com/photo-1500994802273-2dd2df834939?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=662&q=80"
-                alt=""
-                class="work__image"
-              />
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="flexbox-footer">
-        <button class="flexbox-footer-button">Show HTML</button>
-        <button class="flexbox-footer-button">Show CSS</button>
-      </div>
-    </div>
-
     <footer class="footer">All free by <span>mtp0881</span></footer>
   </body>
 </html>
