@@ -19,6 +19,28 @@
     <title>Free UI</title>
   </head>
   <body>
+    <script language="JavaScript">
+      function checkAll(source) {
+        checkboxes = document.getElementsByName("checkbox");
+        for (var i = 0, n = checkboxes.length; i < n; i++) {
+          checkboxes[i].checked = source.checked;
+        }
+      }
+      function checkAll2(source) {
+        checkboxes = document.getElementsByName("checkbox2");
+        for (var i = 0, n = checkboxes.length; i < n; i++) {
+          checkboxes[i].checked = source.checked;
+        }
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <header class="header">
       <a class="header__logo" href="#"
         ><img src="images/logo.png" alt="logo"
@@ -49,26 +71,18 @@
           <div class="flex-item__result">
             <div class="dropdown">
               <div class="dropdown__select">
-                <i class="fa fa-file dropdown__icon"></i>
-                <span class="dropdown__text">File type</span>
-                <i class="fa fa-caret-down dropdown__caret"></i>
+                <span class="dropdown__text">Select an option</span>
+                <i class="fa fa-angle-down dropdown__caret"></i>
               </div>
               <ul class="dropdown__list">
                 <li class="dropdown__item">
-                  <i class="fa fa-file dropdown__icon"></i>
-                  <span class="dropdown__text">Markup HTML</span>
+                  <span class="dropdown__text">Option 1</span>
                 </li>
                 <li class="dropdown__item">
-                  <i class="fa fa-file dropdown__icon"></i>
-                  <span class="dropdown__text">Photoshop PDF</span>
+                  <span class="dropdown__text">Option 2</span>
                 </li>
                 <li class="dropdown__item">
-                  <i class="fa fa-file dropdown__icon"></i>
-                  <span class="dropdown__text">Illustrator Al</span>
-                </li>
-                <li class="dropdown__item">
-                  <i class="fa fa-file dropdown__icon"></i>
-                  <span class="dropdown__text">Sketch .Skertch</span>
+                  <span class="dropdown__text">Option 3</span>
                 </li>
               </ul>
             </div>
@@ -203,52 +217,677 @@
           </div>
         </div>
 
-        <!-- <div class="login-form">
+        <!-- Login Form Start -->
+        <div class="login-form">
           <div class="login-form-header">
             <h2>Login Form</h2>
           </div>
-          <form class="login-form-resuilt">
-            <h3 class="login-form-resuilt__title">First name</h3>
-            <input
-              type="text"
-              class="login-form-resuilt__input"
-              placeholder="Name"
-            />
-            <h3 class="login-form-resuilt__title">Email</h3>
-            <input
-              type="text"
-              class="login-form-resuilt__input"
-              placeholder="Email"
-            />
-            <h3 class="login-form-resuilt__title">Phone number</h3>
-            <input
-              type="text"
-              class="login-form-resuilt__input"
-              placeholder="+7 000 000 00 00"
-            />
-            <button
-              class="
-                login-form-resuilt__button login-form-resuilt__button--color
-              "
-            >
-              Register
-            </button>
-            <button class="login-form-resuilt__button">Sign in</button>
-            <div class="login-form-resuilt__footer">
-              <input type="checkbox" class="checkbox" />
-              <p class="license">
-                I agree to the terms and conditions of
-                <span>Privacy Policy</span>
-              </p>
+          <form action="" class="loginForm">
+            <h2 class="loginForm__title">Login</h2>
+            <div class="loginForm__content">
+              <label class="loginForm__label" for="email">Email</label>
+              <input
+                class="loginForm__text-input"
+                type="text"
+                placeholder="mail@website.com"
+                id="email"
+              />
+            </div>
+            <div class="loginForm__content">
+              <label class="loginForm__label" for="password">Password</label>
+              <input
+                class="loginForm__text-input"
+                type="text"
+                placeholder="Min. 8 character"
+                id="password"
+              />
+            </div>
+
+            <div class="loginForm__support">
+              <div class="loginForm__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  class="checkbox-input"
+                  id="checkbox-input"
+                />
+                <label class="checkbox" for="checkbox-input">
+                  <i class="fa fa-check"></i>
+                </label>
+
+                <label for="checkbox-input">Remember me</label>
+              </div>
+              <a href="">Forget password?</a>
+            </div>
+
+            <div class="loginForm__footer">
+              <input class="loginForm__button" type="button" value="Login" />
             </div>
           </form>
           <div class="login-form-footer">
             <button class="button">Show HTML</button>
             <button class="button">Show CSS</button>
           </div>
-        </div> -->
+        </div>
+        <!-- Login Form End -->
       </div>
+
+      <!-- Table Start -->
+      <!--      All Candidates Table      -->
+      <div class="table-wrap">
+        <div class="table-wrap-header">
+          <h2>All Candidates</h2>
+        </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>candidates name</th>
+                <th>job wanted</th>
+                <th>apply on</th>
+                <th>recent works</th>
+                <th>option</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="profile">
+                    <img
+                      src="images/Screen-Shot-0003-07-13-at-7.53.06.jpg"
+                      alt=""
+                    />
+                    <p>Elston Gullan</p>
+                  </div>
+                </td>
+                <td>Front End Developer</td>
+                <td>Jun 21,2019</td>
+                <td>
+                  <div class="brand">
+                    <img src="images/Google_icon-icons.com_66793.jpg" alt="" />
+                    <p>Google.Inc</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="button">
+                    <a href="#">View CV</a>
+                    <a href="#">
+                      <i class="fas fa-file-download"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="profile">
+                    <img
+                      src="images/Screen-Shot-0003-07-13-at-7.53.22.jpg"
+                      alt=""
+                    />
+                    <p>Ea Tipenne</p>
+                  </div>
+                </td>
+                <td>Graphic Designer</td>
+                <td>Jun 21,2019</td>
+                <td>
+                  <div class="brand">
+                    <img src="images/Dropbox_icon-icons.com_66767.jpg" alt="" />
+                    <p>Dropbox.Inc</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="button">
+                    <a href="#">View CV</a>
+                    <a href="#">
+                      <i class="fas fa-file-download"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="profile">
+                    <img
+                      src="images/Screen-Shot-0003-07-13-at-7.53.28.jpg"
+                      alt=""
+                    />
+                    <p>Francisco Maia</p>
+                  </div>
+                </td>
+                <td>Internet Marketing Strategist</td>
+                <td>Jun 21,2019</td>
+                <td>
+                  <div class="brand">
+                    <img src="images/mailchimp_icon_130881.jpg" alt="" />
+                    <p>Mailchimp.Inc</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="button">
+                    <a href="#">View CV</a>
+                    <a href="#">
+                      <i class="fas fa-file-download"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap-footer">
+          <button class="table-wrap-button">Show HTML</button>
+          <button class="table-wrap-button">Show CSS</button>
+        </div>
+      </div>
+
+      <!--      Products List Table      -->
+      <div class="table-wrap">
+        <div class="table-wrap-header">
+          <h2>Product List</h2>
+        </div>
+        <div class="table2">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="checkboxId"
+                      onclick="checkAll(this)"
+                    />
+                    <label class="checkbox-item" for="checkboxId">
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </th>
+                <th>payment number</th>
+                <th>brand</th>
+                <th>#id</th>
+                <th>stock</th>
+                <th>var</th>
+                <th>price</th>
+                <th>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkboxId1" name="checkbox" />
+                    <label class="checkbox-item" for="checkboxId1">
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-image">
+                    <img src="images/pack1.jpg" alt="" />
+                    <p>Rules Post on Dribbble</p>
+                  </div>
+                </td>
+                <td>Uniqlo</td>
+                <td>123456</td>
+                <td>92</td>
+                <td>5</td>
+                <td>$88.00</td>
+                <td><i class="fas fa-ellipsis-h"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkboxId2" name="checkbox" />
+                    <label class="checkbox-item" for="checkboxId2">
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-image">
+                    <img src="images/pack2.jpg" alt="" />
+                    <p>Cryptocurrency Landding Page</p>
+                  </div>
+                </td>
+                <td>DSVN</td>
+                <td>423389</td>
+                <td>42</td>
+                <td>2</td>
+                <td>$99.99</td>
+                <td><i class="fas fa-ellipsis-h"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkboxId3" name="checkbox" />
+                    <label class="checkbox-item" for="checkboxId3">
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-image">
+                    <img src="images/shirt1.jpg" alt="" />
+                    <p>Salvo T-shirt Red</p>
+                  </div>
+                </td>
+                <td>DSVN</td>
+                <td>423389</td>
+                <td>4</td>
+                <td>2</td>
+                <td>$70.00</td>
+                <td><i class="fas fa-ellipsis-h"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap-footer">
+          <button class="table-wrap-button">Show HTML</button>
+          <button class="table-wrap-button">Show CSS</button>
+        </div>
+      </div>
+
+      <!--      Files Table      -->
+      <div class="table-wrap">
+        <div class="table-wrap-header">
+          <h2>Files</h2>
+        </div>
+        <div class="table3">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="checkboxId0"
+                      onclick="checkAll2(this)"
+                    />
+                    <label class="checkbox-item" for="checkboxId0">
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </th>
+                <th>Files Name</th>
+                <th>File Type</th>
+                <th>Date</th>
+                <th>Sizes</th>
+                <th>Author</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkboxId11" name="checkbox2" />
+                    <label class="checkbox-item" for="checkboxId11">
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-image">
+                    <img src="images/tb3-01.jpg" alt="" />
+                    <p>Rules Post on Dribbble</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="file">
+                    <div class="file-type file-type--blue"></div>
+                    <p>Document</p>
+                  </div>
+                </td>
+                <td>Jun 21,2019</td>
+                <td>800 Mb</td>
+                <td>Ibnu Mas'ud</td>
+                <td>
+                  <div class="action">
+                    <div class="action-download">
+                      <i class="fas fa-cloud-download-alt"></i>
+                    </div>
+                    <div class="action-trash">
+                      <i class="far fa-trash-alt"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkboxId12" name="checkbox2" />
+                    <label class="checkbox-item" for="checkboxId12">
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-image">
+                    <img src="images/tb3-02.jpg" alt="" />
+                    <p>Square Dashoard UI Kit</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="file">
+                    <div class="file-type file-type--green"></div>
+                    <p>Image</p>
+                  </div>
+                </td>
+                <td>Jun 21,2019</td>
+                <td>2,8 Mb</td>
+                <td>Mas Indro</td>
+                <td>
+                  <div class="action">
+                    <div class="action-download">
+                      <i class="fas fa-cloud-download-alt"></i>
+                    </div>
+                    <div class="action-trash">
+                      <i class="far fa-trash-alt"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkboxId13" name="checkbox2" />
+                    <label class="checkbox-item" for="checkboxId13">
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-image">
+                    <img src="images/tb3-03.jpg" alt="" />
+                    <p>Attachment Brief Example</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="file">
+                    <div class="file-type file-type--blue"></div>
+                    <p>Document</p>
+                  </div>
+                </td>
+                <td>Jun 21,2019</td>
+                <td>3,1 Kb</td>
+                <td>Avian Rizky</td>
+                <td>
+                  <div class="action">
+                    <div class="action-download">
+                      <i class="fas fa-cloud-download-alt"></i>
+                    </div>
+                    <div class="action-trash">
+                      <i class="far fa-trash-alt"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap-footer">
+          <button class="table-wrap-button">Show HTML</button>
+          <button class="table-wrap-button">Show CSS</button>
+        </div>
+      </div>
+      <!-- Table End -->
+      <!-- Flex Box Start-->
+      <!------ Top Trending Now Start ------->
+      <div class="flex-practive">
+        <div class="trending-wrap">
+          <div class="trending-wrap-header">
+            <h2>Top Trending Now</h2>
+          </div>
+          <div class="trending">
+            <div class="trending-list">
+              <div class="trending-item">
+                <div class="trending-image">
+                  <img src="images/card-pic-2.png" alt="" />
+                  <div class="trending-rank">2</div>
+                </div>
+                <div class="trending-content">
+                  <div class="content-header">
+                    <div class="live">
+                      <ion-icon
+                        class="live-icon"
+                        name="wifi-outline"
+                      ></ion-icon>
+                      Live
+                    </div>
+                    <div class="category">Shooter</div>
+                  </div>
+                  <h2 class="content-title">
+                    Spectating the Pros - Fly Santorin, PowerofEvil - New Caps
+                    vs PoE
+                  </h2>
+                  <div class="content-status">
+                    <div class="status">
+                      <div class="status-circle status--blue"></div>
+                      4.2K watching
+                    </div>
+                    <div class="status">
+                      <div class="status-circle status--green"></div>
+                      1 week ago
+                    </div>
+                  </div>
+                  <div class="content-user">
+                    <div class="user-avatar">
+                      <img src="images/ava-2.png" alt="" />
+                    </div>
+                    <div class="user-main">
+                      <div class="user-name-wrap">
+                        <div class="user-name">Gabriel Erickson</div>
+                        <div class="confirm">
+                          <i class="fas fa-check"></i>
+                        </div>
+                      </div>
+                      <div class="user-game">Call of Duty</div>
+                    </div>
+                  </div>
+                  <div class="action">
+                    <div class="action-item">
+                      <i class="fas fa-share"></i>
+                    </div>
+                    <div class="action-item">
+                      <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="action-item">
+                      <i class="fas fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trending-wrap-footer">
+            <button class="trending-wrap-button">Show HTML</button>
+            <button class="trending-wrap-button">Show CSS</button>
+          </div>
+        </div>
+        <!--------    Top Trending Now End    --------->
+        <!--------  Recent Notification Start  -------->
+        <div class="notification">
+          <div class="notification-header">
+            <h2>Recent Notification</h2>
+          </div>
+          <div class="notification-list">
+            <div class="notification-item">
+              <div class="notification-avatar">
+                <div class="notification-pic">
+                  <img src="images/ava-6.png" alt="" />
+                </div>
+                <div class="notification-status notification-status--liked">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+              <div class="notification-user">
+                <div class="notification-name">Glenn Greer</div>
+                <div class="notification-caption">
+                  Commented on <span>Collab.</span> 12h
+                </div>
+                <div class="notification-comment">
+                  "Love this so much! What tools do you use to create your 3d
+                  illustrations?"
+                </div>
+                <div class="notification-action">
+                  <button class="notification-button">
+                    <i class="fas fa-comment"></i>
+                  </button>
+                  <button class="notification-button">
+                    <i class="fas fa-thumbs-up"></i>
+                  </button>
+                  <button class="notification-button">
+                    <i class="fas fa-star"></i>
+                  </button>
+                  <button class="notification-button">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="notification-image notification-image--pink">
+                <img src="images/figure-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="notification-footer">
+            <button class="notification-footer-button">Show HTML</button>
+            <button class="notification-footer-button">Show CSS</button>
+          </div>
+        </div>
+      </div>
+      <!------ Recent Notification End ------->
+      <!-- Flex Box End -->
+      <!-------  Jobs List Start  ------->
+      <div class="job-wrapper">
+        <div class="job-wrapper-header">
+          <h2>Recent Notification</h2>
+        </div>
+        <div class="job-container">
+          <div class="wraper">
+            <div class="job-list">
+              <div class="job-list-item">
+                <div class="job-list-logo">
+                  <img src="images/3721683-evernote_108060.png" alt="" />
+                </div>
+                <h3 class="job-list-title">Lead Product Design</h3>
+                <div class="job-list-detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                  eveniet maiores rem fugit voluptatem ipsa quisquam temporibus
+                  numquam tempora ducimus saepe dolore architecto, ut
+                  consequuntur corporis amet tempore nesciunt magni.
+                </div>
+                <div class="job-list-tag">
+                  <div class="tag-item">Full Time</div>
+                  <div class="tag-item">Min 1 Year</div>
+                  <div class="tag-item">Director</div>
+                </div>
+                <div class="job-list-friends">
+                  <div class="friends-item">
+                    <img src="images/face10.png" alt="" />
+                  </div>
+                  <div class="friends-item">
+                    <img src="images/face4.png" alt="" />
+                  </div>
+                  <div class="friends-item">
+                    <img src="images/face9.png" alt="" />
+                  </div>
+                  <div class="friends-item">+2</div>
+                  <div class="friends-count">5 Friends Work here</div>
+                </div>
+                <div class="job-list-action">
+                  <button class="action-button action-button--blue">
+                    Apply Now
+                  </button>
+                  <button class="action-button action-button--gray">
+                    Messages
+                  </button>
+                </div>
+              </div>
+              <div class="job-list-item">
+                <div class="job-list-logo">
+                  <img src="images/airbnb_icon_131000.png" alt="" />
+                </div>
+                <h3 class="job-list-title">Lead Product Design</h3>
+                <div class="job-list-detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                  eveniet maiores rem fugit voluptatem ipsa quisquam temporibus
+                  numquam tempora ducimus saepe dolore architecto, ut
+                  consequuntur corporis amet tempore nesciunt magni.
+                </div>
+                <div class="job-list-tag">
+                  <div class="tag-item">Full Time</div>
+                  <div class="tag-item">Min 1 Year</div>
+                  <div class="tag-item">Director</div>
+                </div>
+                <div class="job-list-friends">
+                  <div class="friends-item">
+                    <img src="images/face10.png" alt="" />
+                  </div>
+                  <div class="friends-item">
+                    <img src="images/face4.png" alt="" />
+                  </div>
+                  <div class="friends-item">
+                    <img src="images/face9.png" alt="" />
+                  </div>
+                  <div class="friends-item">+2</div>
+                  <div class="friends-count">5 Friends Work here</div>
+                </div>
+                <div class="job-list-action">
+                  <button class="action-button action-button--blue">
+                    Apply Now
+                  </button>
+                  <button class="action-button action-button--gray">
+                    Messages
+                  </button>
+                </div>
+              </div>
+              <div class="job-list-item">
+                <div class="job-list-logo">
+                  <img src="images/mailchimp_icon_130881.png" alt="" />
+                </div>
+                <h3 class="job-list-title">Lead Product Design</h3>
+                <div class="job-list-detail">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                  eveniet maiores rem fugit voluptatem ipsa quisquam temporibus
+                  numquam tempora ducimus saepe dolore architecto, ut
+                  consequuntur corporis amet tempore nesciunt magni.
+                </div>
+                <div class="job-list-tag">
+                  <div class="tag-item">Full Time</div>
+                  <div class="tag-item">Min 1 Year</div>
+                  <div class="tag-item">Director</div>
+                </div>
+                <div class="job-list-friends">
+                  <div class="friends-item">
+                    <img src="images/face10.png" alt="" />
+                  </div>
+                  <div class="friends-item">
+                    <img src="images/face4.png" alt="" />
+                  </div>
+                  <div class="friends-item">
+                    <img src="images/face9.png" alt="" />
+                  </div>
+                  <div class="friends-item">+2</div>
+                  <div class="friends-count">5 Friends Work here</div>
+                </div>
+                <div class="job-list-action">
+                  <button class="action-button action-button--blue">
+                    Apply Now
+                  </button>
+                  <button class="action-button action-button--gray">
+                    Messages
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="job-wrapper-footer">
+          <button class="job-wrapper-footer-button">Show HTML</button>
+          <button class="job-wrapper-footer-button">Show CSS</button>
+        </div>
+      </div>
+      <!------------    Jobs List End        -------------->
     </div>
+
     <footer class="footer">All free by <span>mtp0881</span></footer>
   </body>
 </html>
