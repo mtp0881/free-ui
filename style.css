@@ -169,7 +169,7 @@ img {
   border-radius: 10px;
   padding: 10px;
   position: absolute;
-  top: calc(100% + 12px);
+  top: calc(100% + 10px);
   left: 0;
   width: 100%;
   opacity: 0;
@@ -193,7 +193,7 @@ img {
 }
 .dropdown__item {
   cursor: pointer;
-  padding: 15px;
+  padding: 6px;
   font-size: 18px;
   color: #747474;
   font-weight: 300;
@@ -205,7 +205,6 @@ img {
   transition: all 0.1s ease;
 }
 .dropdown__item a {
-  text-decoration: none;
   color: #747474;
 }
 /* ------------------------ */
