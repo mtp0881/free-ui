@@ -42,81 +42,29 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <header class="header">
-      <a class="header__logo" href="#"
-        ><img src="images/logo.png" alt="logo"
-      /></a>
-      <h1 class="header__title">Free UI</h1>
+      <div class="header-left">
+        <a href="./index.html" class="header__title">Free UI</a>
+      </div>
+      <div class="header-right">
+        <ul class="filter">
+          <li class="filter-item feature1"><a href="./index.html">All</a></li>
+          <li class="filter-item">
+            <a href="https://mtp0881.github.io/table-practive/">Table</a>
+          </li>
+          <li class="filter-item">
+            <a href="https://mtp0881.github.io/form-practive/">Form</a>
+          </li>
+          <li class="filter-item">
+            <a href="https://mtp0881.github.io/flexbox-practive/">Flexbox</a>
+          </li>
+          <li class="filter-item">
+            <a href="https://mtp0881.github.io/grid-practive/">Grid</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <div class="container">
-      <ul class="filter">
-        <li class="filter-item feature1"><a href="#">All</a></li>
-        <li class="filter-item"><a href="#">Avatar</a></li>
-        <li class="filter-item"><a href="#">Gradient</a></li>
-        <li class="filter-item"><a href="#">Form</a></li>
-        <li class="filter-item"><a href="#">List</a></li>
-        <li class="filter-item"><a href="#">Card</a></li>
-        <li class="filter-item feature2"><a href="#">Center CSS</a></li>
-        <li class="filter-item"><a href="#">Progress</a></li>
-        <li class="filter-item"><a href="#">Loading</a></li>
-        <li class="filter-item"><a href="#">Dropdown</a></li>
-        <li class="filter-item"><a href="#">Menu</a></li>
-        <li class="filter-item"><a href="#">Search</a></li>
-        <li class="filter-item feature3"><a href="#">Flexbox</a></li>
-      </ul>
-
-      <div class="flex">
-        <div class="flex-item flex-item--large">
-          <h2 class="flex-item__header">Menu Dropdown</h2>
-          <div class="flex-item__result">
-            <div class="dropdown">
-              <div class="dropdown__select">
-                <span class="dropdown__text">Select an option</span>
-                <i class="fa fa-angle-down dropdown__caret"></i>
-              </div>
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <span class="dropdown__text">Option 1</span>
-                </li>
-                <li class="dropdown__item">
-                  <span class="dropdown__text">Option 2</span>
-                </li>
-                <li class="dropdown__item">
-                  <span class="dropdown__text">Option 3</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex-item__footer">
-            <button class="flex-item__footer-button">Show HTML</button>
-            <button class="flex-item__footer-button">Show CSS</button>
-          </div>
-        </div>
-        <div class="flex-item">
-          <h2 class="flex-item__header">Loading Circle</h2>
-          <div class="flex-item__result">
-            <div class="circle-loading"></div>
-          </div>
-          <div class="flex-item__footer">
-            <button class="flex-item__footer-button">Show HTML</button>
-            <button class="flex-item__footer-button">Show CSS</button>
-          </div>
-        </div>
-        <div class="flex-item">
-          <h2 class="flex-item__header">Loading Circle</h2>
-          <div class="flex-item__result">
-            <div class="circles">
-              <div class="circle-item"></div>
-              <div class="circle-item"></div>
-            </div>
-          </div>
-          <div class="flex-item__footer">
-            <button class="flex-item__footer-button">Show HTML</button>
-            <button class="flex-item__footer-button">Show CSS</button>
-          </div>
-        </div>
-      </div>
-
       <div class="flexbox">
         <h2 class="flexbox-header">Flex Box Menu</h2>
         <div class="flexbox-result">
@@ -170,6 +118,58 @@
         </div>
       </div>
 
+      <div class="flex">
+        <div class="flex-item flex-item--large">
+          <h2 class="flex-item__header">Menu Dropdown</h2>
+          <div class="flex-item__result">
+            <div class="dropdown">
+              <div class="dropdown__select">
+                <span class="dropdown__text">Select an option</span>
+                <i class="fa fa-angle-down dropdown__caret"></i>
+              </div>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <span class="dropdown__text">Option 1</span>
+                </li>
+                <li class="dropdown__item">
+                  <span class="dropdown__text">Option 2</span>
+                </li>
+                <li class="dropdown__item">
+                  <span class="dropdown__text">Option 3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-item__footer">
+            <button class="flex-item__footer-button">Show HTML</button>
+            <button class="flex-item__footer-button">Show CSS</button>
+          </div>
+        </div>
+        <div class="flex-item">
+          <h2 class="flex-item__header">Loading Circle</h2>
+          <div class="flex-item__result">
+            <div class="circle-loading"></div>
+          </div>
+          <div class="flex-item__footer">
+            <button class="flex-item__footer-button">Show HTML</button>
+            <button class="flex-item__footer-button">Show CSS</button>
+          </div>
+        </div>
+        <div class="flex-item">
+          <h2 class="flex-item__header">Loading Circle</h2>
+          <div class="flex-item__result">
+            <div class="circles">
+              <div class="circle-item"></div>
+              <div class="circle-item"></div>
+            </div>
+          </div>
+          <div class="flex-item__footer">
+            <button class="flex-item__footer-button">Show HTML</button>
+            <button class="flex-item__footer-button">Show CSS</button>
+          </div>
+        </div>
+      </div>
+
       <div class="form">
         <div class="registration-form">
           <div class="registration-form-header">
@@ -195,10 +195,7 @@
               placeholder="+7 000 000 00 00"
             />
             <button
-              class="
-                registration-form-resuilt__button
-                registration-form-resuilt__button--color
-              "
+              class="registration-form-resuilt__button registration-form-resuilt__button--color"
             >
               Register
             </button>
@@ -223,44 +220,53 @@
             <h2>Login Form</h2>
           </div>
           <form action="" class="loginForm">
-            <h2 class="loginForm__title">Login</h2>
-            <div class="loginForm__content">
-              <label class="loginForm__label" for="email">Email</label>
-              <input
-                class="loginForm__text-input"
-                type="text"
-                placeholder="mail@website.com"
-                id="email"
+            <div class="login-from-left loginForm-item">
+              <img
+                class="login-from-left-img"
+                src="./images/facebook-icon.jpeg"
+                alt=""
               />
             </div>
-            <div class="loginForm__content">
-              <label class="loginForm__label" for="password">Password</label>
-              <input
-                class="loginForm__text-input"
-                type="text"
-                placeholder="Min. 8 character"
-                id="password"
-              />
-            </div>
-
-            <div class="loginForm__support">
-              <div class="loginForm__checkbox-wrap">
+            <div class="login-from-right loginForm-item">
+              <h2 class="loginForm__title">Login</h2>
+              <div class="loginForm__content">
+                <label class="loginForm__label" for="email">Email</label>
                 <input
-                  type="checkbox"
-                  class="checkbox-input"
-                  id="checkbox-input"
+                  class="loginForm__text-input"
+                  type="text"
+                  placeholder="mail@website.com"
+                  id="email"
                 />
-                <label class="checkbox" for="checkbox-input">
-                  <i class="fa fa-check"></i>
-                </label>
-
-                <label for="checkbox-input">Remember me</label>
               </div>
-              <a href="">Forget password?</a>
-            </div>
+              <div class="loginForm__content">
+                <label class="loginForm__label" for="password">Password</label>
+                <input
+                  class="loginForm__text-input"
+                  type="text"
+                  placeholder="Min. 8 character"
+                  id="password"
+                />
+              </div>
 
-            <div class="loginForm__footer">
-              <input class="loginForm__button" type="button" value="Login" />
+              <div class="loginForm__support">
+                <div class="loginForm__checkbox-wrap">
+                  <input
+                    type="checkbox"
+                    class="checkbox-input"
+                    id="checkbox-input"
+                  />
+                  <label class="checkbox" for="checkbox-input">
+                    <i class="fa fa-check"></i>
+                  </label>
+
+                  <label for="checkbox-input">Remember me</label>
+                </div>
+                <a href="">Forget password?</a>
+              </div>
+
+              <div class="loginForm__footer">
+                <input class="loginForm__button" type="button" value="Login" />
+              </div>
             </div>
           </form>
           <div class="login-form-footer">
@@ -888,6 +894,8 @@
       <!------------    Jobs List End        -------------->
     </div>
 
-    <footer class="footer">All free by <span>mtp0881</span></footer>
+    <footer class="footer">
+      All free by <a href="https://github.com/mtp0881"><span>mtp0881</span></a>
+    </footer>
   </body>
 </html>
